@@ -3,9 +3,9 @@
 A beautiful, nature-themed web proxy that allows you to browse websites through custom DNS servers. Browse securely and privately with an elegant tree-inspired interface.
 
 ## 🌐 Live Demo
-**[Click here to access the live website](https://yourusername.github.io/trees-courtesy)** *(replace with your actual GitHub Pages URL)*
+**[Click here to access the live website](https://warriortreesXP.github.io/trees-courtesy)** *(replace with your actual GitHub Pages URL)*
 
-Or visit: `https://yourusername.github.io/trees-courtesy`
+Or visit: `https://warriortreesXP.github.io/trees-courtesy`
 
 ## ✨ Features
 
