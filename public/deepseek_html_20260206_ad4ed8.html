@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trees Courtesy - Custom DNS Proxy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-tree"></i>
+                <h1>Trees Courtesy</h1>
+            </div>
+            <p class="tagline">Browse with custom DNS - Naturally secure</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2><i class="fas fa-globe"></i> Custom DNS Proxy</h2>
+                <p>Enter any website URL and DNS to launch</p>
+                
+                <form id="proxyForm">
+                    <div class="form-group">
+                        <label for="url"><i class="fas fa-link"></i> Website URL</label>
+                        <input type="url" id="url" placeholder="https://example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dns"><i class="fas fa-server"></i> DNS Server</label>
+                        <input type="text" id="dns" placeholder="1.1.1.1" required>
+                        <div class="dns-buttons">
+                            <button type="button" class="dns-btn" data-dns="1.1.1.1">Cloudflare</button>
+                            <button type="button" class="dns-btn" data-dns="8.8.8.8">Google</button>
+                            <button type="button" class="dns-btn" data-dns="9.9.9.9">Quad9</button>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="launch-btn">
+                        <i class="fas fa-rocket"></i> Launch Website
+                    </button>
+                </form>
+                
+                <div class="result" id="result">
+                    <p>Your website will appear here after launching</p>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h3><i class="fas fa-info-circle"></i> How to Use</h3>
+                <ol>
+                    <li>Enter a website URL (e.g., https://wikipedia.org)</li>
+                    <li>Choose or enter a DNS server</li>
+                    <li>Click "Launch Website"</li>
+                    <li>Website loads through custom DNS</li>
+                </ol>
+                <p class="live-demo">
+                    <strong>Live Demo:</strong> 
+                    <a href="#" id="liveLink">Loading your live link...</a>
+                </p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Trees Courtesy &copy; 2024 | 
+                <a href="https://github.com/yourusername/trees-courtesy" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

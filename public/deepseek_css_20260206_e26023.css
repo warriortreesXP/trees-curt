@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --tree-green: #2E7D32;
+    --forest-green: #1B5E20;
+    --bark-brown: #5D4037;
+    --leaf-green: #4CAF50;
+    --soil-brown: #8D6E63;
+    --cream: #F5F5DC;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--tree-green), var(--forest-green));
+    min-height: 100vh;
+    color: var(--bark-brown);
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--leaf-green);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.logo i {
+    font-size: 3rem;
+    color: var(--tree-green);
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, var(--forest-green), var(--bark-brown));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+    color: var(--soil-brown);
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.card {
+    background: var(--cream);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 2px solid var(--soil-brown);
+}
+
+.card h2 {
+    color: var(--forest-green);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card p {
+    color: var(--soil-brown);
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--bark-brown);
+}
+
+label i {
+    color: var(--tree-green);
+}
+
+input[type="url"],
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--soil-brown);
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--tree-green);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
+}
+
+.dns-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.dns-btn {
+    padding: 10px 20px;
+    background: var(--tree-green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.dns-btn:hover {
+    background: var(--forest-green);
+    transform: translateY(-2px);
+}
+
+.launch-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(45deg, var(--tree-green), var(--forest-green));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.launch-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(46, 125, 50, 0.4);
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    border: 2px dashed var(--soil-brown);
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--soil-brown);
+}
+
+.instructions {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid var(--leaf-green);
+}
+
+.instructions h3 {
+    color: var(--forest-green);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.instructions ol {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+    color: var(--bark-brown);
+}
+
+.live-demo {
+    background: var(--cream);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.live-demo a {
+    color: var(--tree-green);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid var(--tree-green);
+    padding-bottom: 2px;
+}
+
+.live-demo a:hover {
+    color: var(--forest-green);
+    border-color: var(--forest-green);
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid var(--soil-brown);
+    color: var(--soil-brown);
+}
+
+footer a {
+    color: var(--tree-green);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+    }
+    
+    .dns-buttons {
+        flex-direction: column;
+    }
+    
+    .dns-btn {
+        width: 100%;
+    }
+}

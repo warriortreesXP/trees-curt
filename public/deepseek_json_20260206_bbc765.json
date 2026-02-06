@@ -1,0 +1,13 @@
+{
+  "name": "trees-courtesy",
+  "version": "1.0.0",
+  "description": "Custom DNS Proxy Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "npx serve public"
+  },
+  "keywords": ["dns", "proxy", "tree", "web"],
+  "author": "Your Name",
+  "license": "MIT"
+}
